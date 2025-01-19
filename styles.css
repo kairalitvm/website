@@ -127,8 +127,23 @@ footer ul li:before {
     color: #f7f4e9; /* Rich cream */
 }
 
-.visit-us iframe {
+.visit-us {
     margin-top: 20px;
+}
+
+.map-button {
+    display: inline-block;
+    background-color: #f7f4e9; /* Rich cream */
+    color: #002c77; /* Royal blue */
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.map-button:hover {
+    background-color: #d4c7ad; /* Light cream */
 }
 
 .footer-note {
