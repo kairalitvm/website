@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background-color: #003366;
+    background-color: #003366; /* Royal blue */
     color: #fff;
     padding: 10px 20px;
     position: fixed;
@@ -20,11 +20,20 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centering text in the header */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .logo {
@@ -43,18 +52,18 @@ header {
 }
 
 #contact-us-btn {
-    background-color: #ffcc00;
+    background-color: #f5c518; /* Rich cream color */
     border: none;
     padding: 10px 20px;
     font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
-    color: #003366;
+    color: #003366; /* Royal blue text color */
     font-weight: bold;
 }
 
 #contact-us-btn:hover {
-    background-color: #ffdd33;
+    background-color: #f5d02e; /* Slightly darker shade on hover */
 }
 
 /* Main Content */
