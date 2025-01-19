@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kairali Medicals and Surgicals - Your trusted pharmacy since 2002, offering online medicine ordering, delivery to your doorstep, and quality healthcare solutions.">
+    <meta name="keywords" content="online medicine order, medicine delivery, pharmacy, Kairali Medicals, surgical supplies, Trivandrum pharmacy, home medicine delivery">
+    <meta name="author" content="Kairali Medicals and Surgicals">
+    <title>Kairali Medicals and Surgicals | Medicine Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Kairali Medicals and Surgicals</h1>
+            <p>Your trusted pharmacy since 2002</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Kairali Medicals and Surgicals! Since 2002, we have been your trusted pharmacy, 
+                providing top-quality medicines and surgical supplies. Located conveniently opposite Deluxe Payward, 
+                Trivandrum Medical College, we pride ourselves on offering personalized care, genuine products, 
+                and swift service. Our goal is to make healthcare accessible by offering medicine delivery to your doorstep. 
+                Order online with us for a hassle-free experience.
+            </p>
+        </section>
+
+        <section class="order-section">
+            <button id="place-order-btn">Place Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <section class="terms">
+            <h3>Terms and Conditions</h3>
+            <ul>
+                <li>A valid prescription must be provided to place an order.</li>
+                <li>Orders can only be placed between 9:00 AM and 8:00 PM IST.</li>
+                <li>Orders will be delivered within 2 to 3 business days.</li>
+                <li>Delivery is facilitated via India Post's Speed Post service.</li>
+                <li>Only prepaid orders are accepted. Payments can be made via Google Pay.</li>
+                <li>Medicines once delivered cannot be returned or exchanged.</li>
+                <li>By placing an order, the customer agrees to all terms and conditions. T&C apply.*</li>
+            </ul>
+        </section>
+
+        <div class="footer-note">
+            <p>© 2024 Kairali Medicals and Surgicals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('place-order-btn').addEventListener('click', function() {
+            const currentTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+            const currentHour = new Date(currentTime).getHours();
+
+            if (currentHour < 9 || currentHour >= 20) {
+                alert("Oops, sorry, we are only open for accepting orders from 9 AM to 8 PM, please check back later. We look forward to serving you.");
+            } else {
+                window.location.href = 'https://wa.me/919400794324?text=Hi%20Kairali%20Medicals%20and%20Surgicals,%20I%20would%20like%20to%20place%20an%20order';
+            }
+        });
+    </script>
+</body>
+</html>
