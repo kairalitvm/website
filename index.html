@@ -3,64 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kairali Medicals and Surgicals - Trusted pharmacy offering online medicine ordering and home delivery services.">
-    <meta name="keywords" content="online medicine order, pharmacy, home delivery, Trivandrum, Kerala">
-    <meta name="author" content="Kairali Medicals">
-    <title>Kairali Medicals and Surgicals</title>
+    <title>Kairali Medicals & Surgicals</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Import Aptos Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Aptos:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <div class="header-container">
-        <div class="logo-container">
-            <img src="images/logo.jpg" alt="Kairali Medicals Logo" class="logo">
-            <div class="logo-text">
-                <h1>Kairali Medicals and Surgicals</h1>
-                <p>Your trusted pharmacy since 2002</p>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Kairali Medicals & Surgicals Logo" class="logo">
+                <div class="logo-text">
+                    <h1>Kairali Medicals & Surgicals</h1>
+                    <p>Your Trusted Pharmacy</p>
+                </div>
             </div>
+            <button id="contact-us-btn" onclick="window.location.href='https://wa.me/918075051622'">CONTACT US</button>
         </div>
-        <button id="contact-us-btn" onclick="window.location.href='https://wa.me/918075051622'">Contact Us</button>
-    </div>
-</header>
+    </header>
 
-<main>
-    <section class="about">
-        <h2>About Us</h2>
-        <p>At Kairali Medicals and Surgicals, we have been providing trusted pharmaceutical services since 2002. Our mission is to deliver the best quality medicines directly to your doorstep. We are committed to your health and well-being with safe, fast, and reliable service.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>At Kairali Medicals & Surgicals, we have been serving the community since 2002. Located near the Trivandrum Medical College, we provide quality medicines and medical supplies with fast and reliable delivery.</p>
+        </section>
 
-    <section class="order-section">
-        <h2>Place an Order</h2>
-        <p>Click the button below to place your order via WhatsApp. Please make sure to send your prescription for faster processing.</p>
-        <button id="place-order-btn" onclick="window.location.href='https://wa.me/919400794324?text=Hi%20Kairali%20Medicals%20and%20Surgicals%2C%20I%20would%20like%20to%20place%20an%20order'">Place Order</button>
-    </section>
+        <section class="order-section">
+            <h2>Place an Order</h2>
+            <button id="place-order-btn" onclick="checkTime()">Place Order</button>
+        </section>
 
-    <section class="contact-map">
-        <h2>Visit Us</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.5556155143818!2d77.0036030115335!3d8.638587794940209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05c7de92d58b5f%3A0xdbff8055a9f6d8d3!2sMohandas%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1727748659197!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-</main>
+        <section class="visit-us">
+            <h2>Visit Us</h2>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.5556155143818!2d77.0036030115335!3d8.524815!4m6!3m5!1s0x3b05bbfd55f59ca7%3A0x48b7652f9097282e!8m2!3d8.524815!4d76.9294654!16s%2Fg%2F11v9_7t6fp?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
 
-<footer>
-    <div class="terms">
-        <h3>Terms and Conditions</h3>
-        <ul>
-            <li>Prescription must be sent to place an order.</li>
-            <li>We accept orders from 9 AM to 8 PM.</li>
-            <li>It takes 2 to 3 business days to deliver the order.</li>
-            <li>Orders are sent via India Post Speed Post.</li>
-            <li>Prepaid orders only. Payment to be made via Google Pay.</li>
-            <li>By placing an order, you agree to all terms and conditions.</li>
-            <li>Medicines cannot be returned.</li>
-        </ul>
-    </div>
-    <div class="footer-note">
-        <p>&copy; 2025 Kairali Medicals and Surgicals | Developed by GRAFYO</p>
-    </div>
-</footer>
+        <section class="terms">
+            <h2>Terms & Conditions</h2>
+            <ul>
+                <li>Prescription must be provided to place an order.</li>
+                <li>Orders are accepted from 9 AM to 8 PM only.</li>
+                <li>Delivery takes 2-3 business days via India Post Speed Post.</li>
+                <li>Only prepaid orders are accepted. Payment can be made via Google Pay.</li>
+                <li>By placing an order, you agree to all the terms and conditions mentioned here.</li>
+                <li>Medicines cannot be returned once the order is placed.</li>
+            </ul>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-note">
+            <p>&copy; 2025 Kairali Medicals & Surgicals. All Rights Reserved. | Developed by GRAFYO</p>
+        </div>
+    </footer>
+
+    <script>
+        function checkTime() {
+            const currentTime = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
+            const hour = new Date(currentTime).getHours();
+
+            if (hour >= 9 && hour <= 20) {
+                window.location.href = "https://wa.me/919400794324?text=Hi%20Kairali%20Medicals%20and%20Surgicals%2C%20I%20would%20like%20to%20place%20an%20order";
+            } else {
+                alert("Oops, sorry! We are only open for accepting orders from 9 AM to 8 PM. Please check back later. We look forward to serving you.");
+            }
+        }
+    </script>
 </body>
 </html>
