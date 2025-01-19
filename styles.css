@@ -23,6 +23,7 @@ header {
     justify-content: center; /* Center the content horizontally */
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase; /* All caps for header text */
 }
 
 .header-container {
@@ -55,7 +56,7 @@ header {
 }
 
 #contact-us-btn {
-    background-color: #fffdd0; /* Updated cream color */
+    background-color: #ffffff; /* White */
     color: #003366; /* Royal blue */
     border: none;
     padding: 12px 25px; /* Adjusted padding */
@@ -68,7 +69,7 @@ header {
 
 #contact-us-btn:hover {
     background-color: #003366; /* Royal blue on hover */
-    color: #fffdd0; /* Cream text on hover */
+    color: #ffffff; /* White text on hover */
 }
 
 /* Main Content */
@@ -134,24 +135,6 @@ footer {
     padding: 20px 10px;
     text-align: center;
     font-size: 14px;
-}
-
-footer .terms {
-    max-width: 800px;
-    margin: 0 auto 20px;
-}
-
-footer .terms ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-footer .terms ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #fff;
 }
 
 footer .footer-note {
