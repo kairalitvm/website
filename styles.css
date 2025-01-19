@@ -55,7 +55,7 @@ header {
 }
 
 #contact-us-btn {
-    background-color: #f5c518; /* Cream color */
+    background-color: #fffdd0; /* Updated cream color */
     color: #003366; /* Royal blue */
     border: none;
     padding: 12px 25px; /* Adjusted padding */
@@ -68,7 +68,7 @@ header {
 
 #contact-us-btn:hover {
     background-color: #003366; /* Royal blue on hover */
-    color: #f5c518; /* Cream text on hover */
+    color: #fffdd0; /* Cream text on hover */
 }
 
 /* Main Content */
