@@ -9,7 +9,6 @@ body {
     background-color: #f5f5f5;
     line-height: 1.6;
 }
-
 /* Header */
 header {
     background-color: #003366; /* Royal blue */
@@ -20,11 +19,12 @@ header {
     width: 100%;
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center;
+    justify-content: center; /* Align logo and contact us */
+    align-items: center; /* Vertically center items */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase; /* All caps for header text */
 }
+
+
 
 .header-container {
     display: flex;
@@ -47,12 +47,12 @@ header {
 
 .logo-text h1 {
     font-size: 18px;
-    margin: 0;
+    text-align: center;
 }
 
 .logo-text p {
     font-size: 12px;
-    margin: 0;
+    text-align: center;
 }
 
 #contact-us-btn {
@@ -166,3 +166,4 @@ footer .footer-note {
         padding: 10px;
     }
 }
+
